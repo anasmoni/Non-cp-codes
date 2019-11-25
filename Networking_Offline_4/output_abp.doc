@@ -1,0 +1,57 @@
+A_Output: Sending packet: aaaaaaaaaaaaaaaaaaa
+B_input:    Message: aaaaaaaaaaaaaaaaaaa  received , sending ACK...
+A_input:   Acked.
+A_Output: Sending packet: bbbbbbbbbbbbbbbbbbb
+B_input:    Message: bbbbbbbbbbbbbbbbbbb  received , sending ACK...
+A_input:   Acked.
+A_Output: Sending packet: ccccccccccccccccccc
+B_input:    Message: ccccccccccccccccccc  received , sending ACK...
+A_input:   Acked.
+A_Output: Sending packet: ddddddddddddddddddd
+B_input:    Message: ddddddddddddddddddd  received , sending ACK...
+A_input:   Acked.
+A_Output: Sending packet: eeeeeeeeeeeeeeeeeee
+B_input:    Message: eeeeeeeeeeeeeeeeeee  received , sending ACK...
+  A_timerinterrupt:                    Resending last packet: eeeeeeeeeeeeeeeeeee.
+B_input:    Unexpected sequence no. sending NAK.
+A_input:   Acked.
+A_Output: Sending packet: fffffffffffffffffff
+A_Output: Waiting for ack . Drop mssg: ggggggggggggggggggg
+B_input:    Message: fffffffffffffffffff  received , sending ACK...
+A_input:   Corrupted..
+
+  A_timerinterrupt:                    Resending last packet: fffffffffffffffffff.
+
+B_input:    Unexpected sequence no. sending NAK.
+A_input:   Corrupted..
+  A_timerinterrupt:                    Resending last packet: fffffffffffffffffff.
+B_input:    Unexpected sequence no. sending NAK.
+
+A_input:   Acked.
+
+A_Output: Sending packet: hhhhhhhhhhhhhhhhhhh
+B_input:    Corrupted. sending NAK .
+A_input:  Unexpected ACK. Drop.
+  A_timerinterrupt:                    Resending last packet: hhhhhhhhhhhhhhhhhhh.
+B_input:    Message: hhhhhhhhhhhhhhhhhhh  received , sending ACK...
+A_input:   Acked.
+A_Output: Sending packet: iiiiiiiiiiiiiiiiiii
+  A_timerinterrupt:                    Resending last packet: iiiiiiiiiiiiiiiiiii.
+  A_timerinterrupt:                    Resending last packet: iiiiiiiiiiiiiiiiiii.
+  A_timerinterrupt:                    Resending last packet: iiiiiiiiiiiiiiiiiii.
+  A_timerinterrupt:                    Resending last packet: iiiiiiiiiiiiiiiiiii.
+B_input:    Message: iiiiiiiiiiiiiiiiiii  received , sending ACK...
+A_input:   Acked.
+A_Output: Sending packet: jjjjjjjjjjjjjjjjjjj
+  A_timerinterrupt:                    Resending last packet: jjjjjjjjjjjjjjjjjjj.
+  A_timerinterrupt:                    Resending last packet: jjjjjjjjjjjjjjjjjjj.
+B_input:    Message: jjjjjjjjjjjjjjjjjjj  received , sending ACK...
+  A_timerinterrupt:                    Resending last packet: jjjjjjjjjjjjjjjjjjj.
+B_input:    Unexpected sequence no. sending NAK.
+A_input:   Corrupted..
+  A_timerinterrupt:                    Resending last packet: jjjjjjjjjjjjjjjjjjj.
+  A_timerinterrupt:                    Resending last packet: jjjjjjjjjjjjjjjjjjj.
+B_input:    Unexpected sequence no. sending NAK.
+A_input:   Acked.
+ Simulator terminated at time 8505.088867
+ after sending 10 msgs from layer5

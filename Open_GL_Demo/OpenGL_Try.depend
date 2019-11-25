@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1560569171 source:g:\codao_non_cp\open_gl_demo\main.cpp
+	<bits/stdc++.h>
+	<windows.h>
+	"glut.h"
+
+1392007564 g:\codao_non_cp\open_gl_demo\opengl\include\glut.h
+	<windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
+1559915703 source:g:\codao_non_cp\open_gl_demo\backup.cpp
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<windows.h>
+	<glut.h>
+
