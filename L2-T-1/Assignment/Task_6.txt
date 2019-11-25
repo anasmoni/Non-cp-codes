@@ -1,0 +1,17 @@
+the maximum sucesss probability would be the minimum failed probability, and each machine should be at least 1, so we can reduce the original package B into B'= B-sum(c_i), and each machine's dp[i][0] should be initialized as fail probability (1 - r_i).
+
+so, we can find the dp state transition based on the modified knapsack(size is B') :
+
+dp[i][c]    = min(dp[i-1][c], dp[i-1][c-cost[n]]*(1-r_i))
+    0<= c <=B' , 1<=i<=n, B' = B-sum(c_i)
+
+intitial of the dp array would be like this:
+
+dp[0][0~B'] = 1
+dp[i][0]    = 1-r_i, 1<=i<=n
+
+so the pseudocode would be like :
+
+ for(int i = 1 ; i<=n;++i)
+  for(int c = cost[i] ; c<=B';++c)
+     dp[i][c] = min(dp[i-1][c], dp[i-1][c-cost[n]]*(1-r_i)))
